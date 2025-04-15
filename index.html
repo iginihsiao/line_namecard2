@@ -6,161 +6,158 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
-  <h2>發送健康名片中...</h2>
+  <h2>正在發送健康名片...</h2>
   <script>
     const flexMessage = {
       type: "flex",
       altText: "健康名片",
       contents: {
         type: "carousel",
-        contents: [{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "1:1",
-        "aspectMode": "cover",
-        "url": "https://www.wellnewss.com/uploads/images/20240404/91d5aa2b8d8e699909.jpg"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "md",
-        "contents": [
+        contents: [
           {
-            "type": "text",
-            "text": "王如新",
-            "weight": "bold",
-            "size": "xl"
-          },
-          {
-            "type": "text",
-            "text": "如新代謝抗老專員　　　　　　　　　　　　　　你還在『感覺』身體健不健康嗎？　　　確認身體狀態不用等，讓我有憑有據的用健康指數告訴你！抗老代謝就從你的健康開始！　　　　　　　　　　　　　　　掌握健康全民瘋測中！　　　　　　　　聯繫我瞭解更多🥰　",
-            "size": "sm",
-            "wrap": true
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://www.nuskin.com.tw/content/dam/ns-tw/images/pageimage/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E8%AA%B2%E7%A8%8B%E8%88%87%E6%B4%BB%E5%8B%95/2025/%E6%8E%8C%E6%8F%A1%E5%81%A5%E5%BA%B7social_activation.jpg",
-        "size": "full",
-        "aspectRatio": "1:1",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "加我LINE傳訊息[我也想測]，免費送你健康檢測碼唷~~",
-            "wrap": true,
-            "weight": "bold",
-            "size": "md"
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-              "type": "uri",
-              "label": "加LINE好友，輸入『我也想測』",
-              "uri": "https://line.me/ti/p/yczErgIzej"
+            "type": "bubble",
+            "hero": {
+              "type": "image",
+              "size": "full",
+              "aspectRatio": "1:1",
+              "aspectMode": "cover",
+              "url": "https://www.wellnewss.com/uploads/images/20240404/91d5aa2b8d8e699909.jpg"
             },
-            "position": "relative"
-          },
-          {
-            "type": "button",
-            "style": "secondary",
-            "action": {
-              "type": "uri",
-              "label": "加入官方帳號",
-              "uri": "https://maac.io/3pF6y"
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "md",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "王如新",
+                  "weight": "bold",
+                  "size": "xl"
+                },
+                {
+                  "type": "text",
+                  "text": "如新代謝抗老專員　　　　　　　　　　　　　　你還在『感覺』身體健不健康嗎？　　　確認身體狀態不用等，讓我有憑有據的用健康指數告訴你！抗老代謝就從你的健康開始！　　　　　　　　　　　　　　　掌握健康全民瘋測中！　　　　　　　　聯繫我瞭解更多🥰　",
+                  "size": "sm",
+                  "wrap": true
+                }
+              ]
             }
           },
           {
-            "type": "button",
-            "style": "secondary",
-            "action": {
-              "type": "uri",
-              "label": "官方活動詳情",
-              "uri": "https://www.nuskin.com.tw/content/news/activities/2025/scantw_social.html"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://i.postimg.cc/y6cD5ZrQ/LINE-OA-Post.png",
-        "size": "full",
-        "aspectRatio": "1:1",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "趣味健康調查局，立即來測！",
-            "weight": "bold",
-            "size": "md",
-            "wrap": true
-          },
-          {
-            "type": "text",
-            "text": "LINE私訊我：『我也想測』，免費領健康條碼！",
-            "size": "sm",
-            "wrap": true,
-            "margin": "md"
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-              "type": "uri",
-              "label": "加我好友領健康碼",
-              "uri": "https://line.me/ti/p/yczErgIzej"
-            }
-          },
-          {
-            "type": "button",
-            "style": "secondary",
-            "action": {
-              "type": "uri",
-              "label": "趣味健康調查局小測驗",
-              "uri": "https://maac.io/3qYPm"
+            "type": "bubble",
+            "hero": {
+              "type": "image",
+              "url": "https://www.nuskin.com.tw/content/dam/ns-tw/images/pageimage/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/%E8%AA%B2%E7%A8%8B%E8%88%87%E6%B4%BB%E5%8B%95/2025/%E6%8E%8C%E6%8F%A1%E5%81%A5%E5%BA%B7social_activation.jpg",
+              "size": "full",
+              "aspectRatio": "1:1",
+              "aspectMode": "cover"
             },
-            "position": "relative",
-            "gravity": "top"
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "加我LINE傳訊息[我也想測]，免費送你健康檢測碼唷~~",
+                  "wrap": true,
+                  "weight": "bold",
+                  "size": "md"
+                }
+              ]
+            },
+            "footer": {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "button",
+                  "style": "primary",
+                  "action": {
+                    "type": "uri",
+                    "label": "加LINE好友，輸入『我也想測』",
+                    "uri": "https://line.me/ti/p/yczErgIzej"
+                  },
+                  "position": "relative"
+                },
+                {
+                  "type": "button",
+                  "style": "secondary",
+                  "action": {
+                    "type": "uri",
+                    "label": "加入官方帳號",
+                    "uri": "https://maac.io/3pF6y"
+                  }
+                },
+                {
+                  "type": "button",
+                  "style": "secondary",
+                  "action": {
+                    "type": "uri",
+                    "label": "官方活動詳情",
+                    "uri": "https://www.nuskin.com.tw/content/news/activities/2025/scantw_social.html"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "bubble",
+            "hero": {
+              "type": "image",
+              "url": "https://i.postimg.cc/y6cD5ZrQ/LINE-OA-Post.png",
+              "size": "full",
+              "aspectRatio": "1:1",
+              "aspectMode": "cover"
+            },
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "趣味健康調查局，立即來測！",
+                  "weight": "bold",
+                  "size": "md",
+                  "wrap": true
+                },
+                {
+                  "type": "text",
+                  "text": "LINE私訊我：『我也想測』，免費領健康條碼！",
+                  "size": "sm",
+                  "wrap": true,
+                  "margin": "md"
+                }
+              ]
+            },
+            "footer": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "button",
+                  "style": "primary",
+                  "action": {
+                    "type": "uri",
+                    "label": "加我好友領健康碼",
+                    "uri": "https://line.me/ti/p/yczErgIzej"
+                  }
+                },
+                {
+                  "type": "button",
+                  "style": "secondary",
+                  "action": {
+                    "type": "uri",
+                    "label": "趣味健康調查局小測驗",
+                    "uri": "https://maac.io/3qYPm"
+                  },
+                  "position": "relative",
+                  "gravity": "top"
+                }
+              ]
+            }
           }
         ]
-      }
-    }
-  ]
-}]
       }
     };
 
@@ -175,7 +172,7 @@
         await liff.sendMessages([flexMessage]);
         liff.closeWindow();
       } else {
-        alert("請從 LINE APP 中開啟此連結以發送名片 🙇‍♀️");
+        alert("請從 LINE APP 中打開連結才能發送名片");
       }
     }
 
