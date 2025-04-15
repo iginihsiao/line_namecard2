@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flex 名片</title>
+  <meta charset="UTF-8">
+  <title>健康名片卡</title>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
-  <h2>王如新的健康 Flex 名片</h2>
-  <button onclick="sendFlex()">送出 Flex Message</button>
-
+  <h2>發送健康名片中...</h2>
   <script>
-    async function sendFlex() {
-      await liff.init({ liffId: "你的 LIFF ID" });
-      if (!liff.isLoggedIn()) liff.login();
-
-      const flexMsg = {
-        type: "flex",
-        altText: "這是王如新的 Flex 名片",
-        contents: {
-          type: "carousel",
-          contents: [
-            {
+    const flexMessage = {
+      type: "flex",
+      altText: "健康名片",
+      contents: {
+        type: "carousel",
+        contents: [{
   "type": "carousel",
   "contents": [
     {
@@ -166,18 +160,26 @@
       }
     }
   ]
-}
-          ]
-        }
-      };
+}]
+      }
+    };
 
-      liff.sendMessages([flexMsg])
-        .then(() => {
-          alert("名片已送出！");
-          liff.closeWindow();
-        })
-        .catch(err => console.error("錯誤", err));
+    async function main() {
+      await liff.init({ liffId: "2007269696-Z7ba7eGM" });
+      if (!liff.isLoggedIn()) {
+        liff.login();
+        return;
+      }
+
+      if (liff.isInClient()) {
+        await liff.sendMessages([flexMessage]);
+        liff.closeWindow();
+      } else {
+        alert("請從 LINE APP 中開啟此連結以發送名片 🙇‍♀️");
+      }
     }
+
+    main();
   </script>
 </body>
 </html>
